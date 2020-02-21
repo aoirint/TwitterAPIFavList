@@ -6,6 +6,7 @@ import yaml
 with open('auth.yml', 'r') as fp:
   auth = yaml.load(fp, Loader=yaml.SafeLoader)
 
+# https://qiita.com/bakira/items/00743d10ec42993f85eb
 CK = auth['consumer_api_key']
 CS = auth['consumer_secret_key']
 AT = auth['access_token']
